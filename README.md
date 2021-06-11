@@ -30,6 +30,19 @@ Please check our [paper](http://www.lix.polytechnique.fr/~kalogeiton/2021/icip-s
     Pytorch > 1.0
     NVIDIA GPU + CUDA
 
+# Complete Architecture
+The complete architecture is shown as follows,
+
+![network](/figure/figure1.PNG)
+
+# Visualization
+## 1. Single style transfer
+
+![st_single](/figure/figure3.PNG)
+
+## 2. Multiple style transfer
+
+![st_multiple](/figure/figure2.PNG)
 
 # Implementation
 ## 1. Quick testing
