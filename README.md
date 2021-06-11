@@ -1,2 +1,68 @@
 # ST-VAE
 Multiple style transfer via variational autoencoder
+
+By Zhi-Song Liu, Vicky Kalogeiton and Marie-Paule Cani
+
+This repo only provides simple testing codes, pretrained models and the network strategy demo.
+
+We propose a Multiple style transfer via variational autoencoder (ST-VAE)
+
+Please check our [paper](http://www.lix.polytechnique.fr/~kalogeiton/2021/icip-style-transfer/)
+
+# BibTex
+
+        @InProceedings{Liu2021stvae,
+            author = {Zhi-Song Liu and Wan-Chi Siu and Marie-Paule Cani},
+            title = {Multiple Style Transfer via Variational AutoEncoder},
+            booktitle = {2021 IEEE International Conference on Image Processing(ICIP)},
+            month = {Oct},
+            year = {2021}
+        }
+        
+# For proposed dSRVAE model, we claim the following points:
+
+• First working on using Variational AutoEncoder for image style transfer.
+
+• Multiple style transfer by proposed VAE based Linear Transformation.
+
+# Dependencies
+    Python > 3.0
+    Pytorch > 1.0
+    NVIDIA GPU + CUDA
+
+
+# Implementation
+## 1. Quick testing
+---------------------------------------
+1. Download pre-trained models from
+
+https://drive.google.com/file/d/1WZrvjCGBO1mpggkdJiaw8jp-6ywbXn4J/view?usp=sharing
+
+and copy them to the folder "models"
+
+2. For single style transfer, run 
+```sh
+$ python eval.py
+```
+The stylized images will be in folder "Test/result"
+3. For multiple style transfer, run
+```sh
+$ python eval_multiple_style.py
+```
+4. For real-time demo, run
+```sh
+$ python real-time-demo.py
+```
+5. For training, put the training images under the folder "train_data"
+
+download MS-COCO dataset from https://cocodataset.org/#home and put it under "train_data/content"
+download Wikiart from https://www.wikiart.org/ and put them under "train_data/style"
+then run,
+ ```sh
+$ python train.py
+```
+
+
+
+
+Special thanks to the contributions of Jakub M. Tomczak for their [LT](https://github.com/sunshineatnoon/LinearStyleTransfer) on their LT computation
