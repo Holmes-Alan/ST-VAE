@@ -19,7 +19,7 @@ Please check our [paper](http://www.lix.polytechnique.fr/~kalogeiton/2021/icip-s
             year = {2021}
         }
         
-# For proposed dSRVAE model, we claim the following points:
+# For proposed ST-VAE model, we claim the following points:
 
 • First working on using Variational AutoEncoder for image style transfer.
 
