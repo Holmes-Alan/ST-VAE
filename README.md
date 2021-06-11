@@ -53,20 +53,22 @@ https://drive.google.com/file/d/1WZrvjCGBO1mpggkdJiaw8jp-6ywbXn4J/view?usp=shari
 
 and copy them to the folder "models"
 
-2. For single style transfer, run 
+2. Put your content image under "Test/content" and your style image under "Test/style"
+
+3. For single style transfer, run 
 ```sh
-$ python eval.py
+$ python eval.py 
 ```
 The stylized images will be in folder "Test/result"
-3. For multiple style transfer, run
+4. For multiple style transfer, run
 ```sh
 $ python eval_multiple_style.py
 ```
-4. For real-time demo, run
+5. For real-time demo, run
 ```sh
-$ python real-time-demo.py
+$ python real-time-demo.py --style_image Test/style/picasso_self_portrait.jpg
 ```
-5. For training, put the training images under the folder "train_data"
+6. For training, put the training images under the folder "train_data"
 
 download MS-COCO dataset from https://cocodataset.org/#home and put it under "train_data/content"
 download Wikiart from https://www.wikiart.org/ and put them under "train_data/style"
