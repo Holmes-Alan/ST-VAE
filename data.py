@@ -14,9 +14,10 @@ def transform():
 
 
 
-def get_training_set(data_dir, data_augmentation):
-
-    train_set = DatasetFromFolder(data_dir, data_augmentation, transform=transform())
+def get_training_set(data_dir):
+    content_dir = data_dir + '/content'
+    ref_dir = data_dir + '/style'
+    train_set = DatasetFromFolder(data_dir, ref_dir)
 
     # Pytorch train and test sets
     # tensor_dataset = torch.utils.data.TensorDataset(train_set)
