@@ -8,6 +8,7 @@ This repo only provides simple testing codes, pretrained models and the network 
 We propose a Multiple style transfer via variational autoencoder (ST-VAE)
 
 Please check our [paper](http://www.lix.polytechnique.fr/~kalogeiton/2021/icip-style-transfer/)
+or arxiv [paper](https://arxiv.org/abs/2110.07375)
 
 # BibTex
 
